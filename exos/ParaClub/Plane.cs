@@ -8,5 +8,14 @@ namespace ParaClub
 {
     internal class Plane
     {
+        private string[] plane =
+        {
+            @" _                         ",
+            @"| \                        ",
+            @"|  \       ______          ",
+            @"--- \_____/  |_|_\____  |  ",
+            @"  \_______ --------- __>-} ",
+            @"        \_____|_____/   |  "
+        };
     }
 }
