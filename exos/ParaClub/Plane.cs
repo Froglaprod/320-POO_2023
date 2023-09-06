@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ParaClub
+﻿namespace ParaClub
 {
     internal class Plane
     {
@@ -29,10 +23,24 @@ namespace ParaClub
 
         public void Show()
         {
-           foreach (string view in PLANE)
+           for(int i = 0; i < PLANE.Length; i++)
             {
+                Console.SetCursorPosition(x, y + i);
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine(view);
+                Console.WriteLine(PLANE[i]);
+            }
+               
+            
+        }
+
+        public void mooveRight()
+        {
+            Console.SetCursorPosition(x + 1, y);
+            x++;
+            
+            if( x == Console.WindowWidth - 2)
+            {
+                x = 0;
             }
         }
     }

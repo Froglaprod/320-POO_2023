@@ -7,10 +7,17 @@
             Plane plane = new Plane(0, 0);
 
             Console.CursorVisible = false;
+            Console.SetWindowSize(Config.SCREEN_WIDTh, Config.SCREEN_HEIGHT);
             plane.Show();
 
+            while (true)
+            {
+                Console.Clear();
+                plane.mooveRight();
 
-            Console.ReadLine();
+                plane.Show();
+                Thread.Sleep(100);
+            }
         }
     }
 }
