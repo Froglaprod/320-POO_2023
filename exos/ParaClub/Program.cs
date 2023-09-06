@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Plane plane = new Plane(0, 0);
+
+            Console.CursorVisible = false;
+            plane.Show();
+
+
+            Console.ReadLine();
         }
     }
 }
