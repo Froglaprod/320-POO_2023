@@ -8,7 +8,9 @@ namespace ParaClub
 {
     internal class Plane
     {
-        private string[] plane =
+        private int x;
+        private int y;
+        private string[] PLANE =
         {
             @" _                         ",
             @"| \                        ",
@@ -17,5 +19,14 @@ namespace ParaClub
             @"  \_______ --------- __>-} ",
             @"        \_____|_____/   |  "
         };
+
+
+        public Plane(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+       
     }
 }
