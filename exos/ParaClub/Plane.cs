@@ -27,6 +27,13 @@ namespace ParaClub
             this.y = y;
         }
 
-       
+        public void Show()
+        {
+           foreach (string view in PLANE)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine(view);
+            }
+        }
     }
 }
